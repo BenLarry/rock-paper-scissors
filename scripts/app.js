@@ -1,7 +1,7 @@
 
 const weaponArr = ['rock', 'scissors', 'paper'];
-const playerSelection = playerPlay();
-const computerSelection = computerPlay();
+let playerSelection = playerPlay();
+let computerSelection = computerPlay();
 let playerScore = 0;
 let computerScore = 0;
 
@@ -46,9 +46,5 @@ function playRound(playerSelection, computerSelection) {
     return `TIE player: ${playerSelection}, computer: ${computerSelection}`;      
 }
 
-function game() {
-    for(let i = 0; i < 5; i++) {
-        console.log(playRound(playerSelection, computerSelection));
-    }
-}
+console.log(playRound(playerSelection, computerSelection));
 
